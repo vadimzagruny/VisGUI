@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B96153C7-5597-409F-87C4-E1783FCD2DEB}</ProjectGuid>
+    <RootNamespace>VisGUI</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)XML;$(DXSDK_DIR)\Include;$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level2</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_NONETWORK;_CRT_SECURE_NO_WARNINGS;_TEST_PERFOMANCE;_WINSOCK_DEPRECATED_NO_WARNINGS;_DETECT_MEMORY_LEAKS;TIXML_USE_STL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>dxguid.lib;d3d9.lib;d3dx9.lib;dinput8.lib;D3dxof.lib;dsound.lib;Dxerr.lib;winmm.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Actor.h" />
+    <ClInclude Include="BaseResource.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="ClassView.h" />
+    <ClInclude Include="client.h" />
+    <ClInclude Include="ComplexSound.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="CompPropertiesGrid.h" />
+    <ClInclude Include="EditParticles.h" />
+    <ClInclude Include="FileManager.h" />
+    <ClInclude Include="FileView.h" />
+    <ClInclude Include="GMaterialParser.h" />
+    <ClInclude Include="GraphicPort.h" />
+    <ClInclude Include="GraphUtil.h" />
+    <ClInclude Include="GrPortTypes.h" />
+    <ClInclude Include="InputPort.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="LoggerImpl.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="MaterialEditor.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="MeshSource.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="NetObject.h" />
+    <ClInclude Include="ObjMan.h" />
+    <ClInclude Include="ParticleEmmiter.h" />
+    <ClInclude Include="ParticleSysNameDlg.h" />
+    <ClInclude Include="ParticleSysPropertiesGrid.h" />
+    <ClInclude Include="ParticleSystem.h" />
+    <ClInclude Include="Presenter.h" />
+    <ClInclude Include="PropertiesWnd.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RTClass.h" />
+    <ClInclude Include="SharedResource.h" />
+    <ClInclude Include="SharedShaderResource.h" />
+    <ClInclude Include="SpectatorCamera.h" />
+    <ClInclude Include="SpriteContainer.h" />
+    <ClInclude Include="SpriteContainerXYZRHW.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StrategyParticleSystem.h" />
+    <ClInclude Include="TargetDataParser.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="timer.h" />
+    <ClInclude Include="ViewTree.h" />
+    <ClInclude Include="VisGUI.h" />
+    <ClInclude Include="VisGUIDoc.h" />
+    <ClInclude Include="VisGUIView.h" />
+    <ClInclude Include="Weather.h" />
+    <ClInclude Include="WeatherEditor.h" />
+    <ClInclude Include="World.h" />
+    <ClInclude Include="XML\tinyxml.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Actor.cpp" />
+    <ClCompile Include="BaseResource.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="ClassView.cpp" />
+    <ClCompile Include="client.cpp" />
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="CompPropertiesGrid.cpp" />
+    <ClCompile Include="Decoration.cpp" />
+    <ClCompile Include="EditParticles.cpp" />
+    <ClCompile Include="FileManager.cpp" />
+    <ClCompile Include="FileView.cpp" />
+    <ClCompile Include="Filter.cpp" />
+    <ClCompile Include="frametimer.cpp" />
+    <ClCompile Include="GMaterialParser.cpp" />
+    <ClCompile Include="GraphicPort.cpp" />
+    <ClCompile Include="GraphUtil.cpp" />
+    <ClCompile Include="InputPort.cpp" />
+    <ClCompile Include="Landmark.cpp" />
+    <ClCompile Include="LandScape.cpp" />
+    <ClCompile Include="Land_vis.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="LoggerImpl.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="MaterialEditor.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="MeshSource.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="Moon.cpp" />
+    <ClCompile Include="NetObject.cpp" />
+    <ClCompile Include="ObjMan.cpp" />
+    <ClCompile Include="ParticleEmmiter.cpp" />
+    <ClCompile Include="ParticleSysNameDlg.cpp" />
+    <ClCompile Include="ParticleSysPropertiesGrid.cpp" />
+    <ClCompile Include="ParticleSystem.cpp" />
+    <ClCompile Include="Presenter.cpp" />
+    <ClCompile Include="PropertiesWnd.cpp" />
+    <ClCompile Include="Rain.cpp" />
+    <ClCompile Include="RainDrop.cpp" />
+    <ClCompile Include="RainStreak.cpp" />
+    <ClCompile Include="RTClass.cpp" />
+    <ClCompile Include="Screen.cpp" />
+    <ClCompile Include="SharedResource.cpp" />
+    <ClCompile Include="SharedShaderResourse.cpp" />
+    <ClCompile Include="Slave.cpp" />
+    <ClCompile Include="Splash.cpp" />
+    <ClCompile Include="SpriteContainer.cpp" />
+    <ClCompile Include="SpriteContainerXYZRHW.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StrategyParticleSystem.cpp" />
+    <ClCompile Include="Synchronizer.cpp" />
+    <ClCompile Include="TargetDataParser.cpp" />
+    <ClCompile Include="targetnew.cpp" />
+    <ClCompile Include="timer.cpp" />
+    <ClCompile Include="ViewTree.cpp" />
+    <ClCompile Include="VisGUI.cpp" />
+    <ClCompile Include="VisGUIDoc.cpp" />
+    <ClCompile Include="VisGUIView.cpp" />
+    <ClCompile Include="VisSlave.cpp" />
+    <ClCompile Include="Weather.cpp" />
+    <ClCompile Include="WeatherEditor.cpp" />
+    <ClCompile Include="World.cpp" />
+    <ClCompile Include="XML\tinyxml.cpp" />
+    <ClCompile Include="XML\tinyxmlerror.cpp" />
+    <ClCompile Include="XML\tinyxmlparser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisGUI.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\classview.bmp" />
+    <Image Include="res\classview_hc.bmp" />
+    <Image Include="res\class_view.ico" />
+    <Image Include="res\class_view_hc.ico" />
+    <Image Include="res\explorer.bmp" />
+    <Image Include="res\explorer_hc.bmp" />
+    <Image Include="res\fileview.bmp" />
+    <Image Include="res\fileview_hc.bmp" />
+    <Image Include="res\file_view.ico" />
+    <Image Include="res\file_view_hc.ico" />
+    <Image Include="res\menuimages.bmp" />
+    <Image Include="res\menuimages_hc.bmp" />
+    <Image Include="res\properties.bmp" />
+    <Image Include="res\properties_hc.bmp" />
+    <Image Include="res\properties_wnd.ico" />
+    <Image Include="res\properties_wnd_hc.ico" />
+    <Image Include="res\sort.bmp" />
+    <Image Include="res\sort_hc.bmp" />
+    <Image Include="res\Test.ico" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\Toolbar256.bmp" />
+    <Image Include="res\VisGUI.ico" />
+    <Image Include="res\VisGUIDoc.ico" />
+    <Image Include="UserImages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="newClassDiagram.cd" />
+    <None Include="res\VisGUI.rc2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="VisGUI.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

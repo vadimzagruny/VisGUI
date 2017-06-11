@@ -1,0 +1,826 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Русский (Россия) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)\r\n"
+    "LANGUAGE 25, 1\r\n"
+    "#include ""res\\VisGUI.rc2""  // ресурсы, не редактируемые в Microsoft Visual C++\r\n"
+    "#include ""l.RUS\\afxres.rc""      // Стандартные компоненты\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.RUS\\afxprint.rc""        // ресурсы для печати/предварительного просмотра\r\n"
+    "#include ""l.RUS\\afxribbon.rc""        // Лента MFC и ресурсы панели управления\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\VisGUI.ico"
+IDR_VisGUITYPE          ICON                    "res\\VisGUIDoc.ico"
+IDI_FILE_VIEW           ICON                    "res\\file_view.ico"
+IDI_FILE_VIEW_HC        ICON                    "res\\file_view_hc.ico"
+IDI_CLASS_VIEW          ICON                    "res\\class_view.ico"
+IDI_CLASS_VIEW_HC       ICON                    "res\\class_view_hc.ico"
+IDI_PROPERTIES_WND      ICON                    "res\\properties_wnd.ico"
+IDI_PROPERTIES_WND_HC   ICON                    "res\\properties_wnd_hc.ico"
+IDR_TEST_TMPL           ICON                    "res\\Test.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+IDR_SORT                BITMAP                  "res\\sort.bmp"
+IDB_SORT_24             BITMAP                  "res\\sort_hc.bmp"
+IDB_FILE_VIEW           BITMAP                  "res\\fileview.bmp"
+IDB_FILE_VIEW_24        BITMAP                  "res\\fileview_hc.bmp"
+IDB_CLASS_VIEW          BITMAP                  "res\\classview.bmp"
+IDB_CLASS_VIEW_24       BITMAP                  "res\\classview_hc.bmp"
+IDR_EXPLORER            BITMAP                  "res\\explorer.bmp"
+IDB_EXPLORER_24         BITMAP                  "res\\explorer_hc.bmp"
+IDR_MENU_IMAGES         BITMAP                  "res\\menuimages.bmp"
+IDB_MENU_IMAGES_24      BITMAP                  "res\\menuimages_hc.bmp"
+IDR_PROPERTIES          BITMAP                  "res\\properties.bmp"
+IDB_PROPERTIES_HC       BITMAP                  "res\\properties_hc.bmp"
+IDB_BITMAP1             BITMAP                  "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_ClearScene
+    BUTTON      ID_LOAD_COMPONENT
+    BUTTON      ID_SAVE_TARGETDATA_FILE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_ClearScene
+    BUTTON      ID_LOAD_COMPONENT
+    BUTTON      ID_SAVE_TARGETDATA_FILE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_SAVE_TARGETDATA_FILE
+    BUTTON      ID_BUTTON32791
+END
+
+IDR_SORT TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_SORT_MENU
+    BUTTON      ID_NEW_FOLDER
+END
+
+IDR_EXPLORER TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_PROPERTIES
+END
+
+IDR_MENU_IMAGES TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_WINDOW_MANAGER
+    SEPARATOR
+    BUTTON      ID_WINDOW_CASCADE
+    BUTTON      ID_WINDOW_TILE_HORZ
+    BUTTON      ID_TOOLS_MACRO
+    BUTTON      ID_SORTING_SORTALPHABETIC
+    BUTTON      ID_SORTING_SORTBYTYPE
+    BUTTON      ID_SORTING_SORTBYACCESS
+    BUTTON      ID_SORTING_GROUPBYTYPE
+END
+
+IDR_PROPERTIES TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_EXPAND_ALL
+    BUTTON      ID_SORTPROPERTIES
+    BUTTON      ID_PROPERTIES1
+    BUTTON      ID_PROPERTIES2
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_LOAD_COMPONENT
+        MENUITEM "S&ave\tCtrl+S",               ID_SAVE_TARGETDATA_FILE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM "Clear Scene",                 ID_ClearScene
+        MENUITEM SEPARATOR
+        MENUITEM "Последний файл",              ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "В&ыход",                      ID_APP_EXIT
+    END
+    POPUP "&Вид"
+    BEGIN
+        POPUP "&Панели инструментов и закрепляемые окна"
+        BEGIN
+            MENUITEM "<местозаполнитель>",          ID_VIEW_TOOLBAR
+        END
+        MENUITEM "&Строка состояния",           ID_VIEW_STATUS_BAR
+        POPUP "&Вид приложения"
+        BEGIN
+            MENUITEM "Windows &2000",               ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office &XP",                  ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "&Windows XP",                 ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 200&3",                ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio 200&5",         ID_VIEW_APPLOOK_VS_2005
+            MENUITEM "Visual Studio 200&8",         ID_VIEW_APPLOOK_VS_2008
+            POPUP "Office 200&7"
+            BEGIN
+                MENUITEM "&Голубой стиль",              ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "Ч&ерный стиль",               ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "&Серебристый стиль",          ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "&Зеленовато-голубой стиль",   ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+    END
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Create Particle System",      ID_EDIT_CREATEPARTICLESYSTEM
+        MENUITEM "Edit Weather",                ID_EDIT_EDITWEATHER
+        MENUITEM "Edit Material",               ID_EDIT_EDITMATERIAL
+    END
+    POPUP "&Справка"
+    BEGIN
+        MENUITEM "&О проекте VisGUI...",        ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_EDIT MENU
+BEGIN
+    POPUP "Редактировать"
+    BEGIN
+        MENUITEM "&Вырезать\tCtrl+X",           ID_EDIT_CUT
+        MENUITEM "&Копировать\tCtrl+C",         ID_EDIT_COPY
+        MENUITEM "Вст&авить\tCtrl+V",           ID_EDIT_PASTE
+    END
+END
+
+IDR_POPUP_SORT MENU
+BEGIN
+    POPUP "Сортировка"
+    BEGIN
+        MENUITEM "&Сортировать по алфавиту",    ID_SORTING_SORTALPHABETIC
+        MENUITEM "Сортировать по &типу",        ID_SORTING_SORTBYTYPE
+        MENUITEM "Сортировать по уровню до&ступа", ID_SORTING_SORTBYACCESS
+        MENUITEM "Группировать по ти&пу",       ID_SORTING_GROUPBYTYPE
+    END
+END
+
+IDR_POPUP_EXPLORER MENU
+BEGIN
+    POPUP "Проводник"
+    BEGIN
+        MENUITEM "&Копировать\tCtrl+C",         ID_EDIT_COPY
+        MENUITEM "Вст&авить\tCtrl+V",           ID_EDIT_PASTE
+        MENUITEM "&Вырезать\tCtrl+X",           ID_EDIT_CUT
+        MENUITEM "&Удалить\tDel",               ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Свойства...",                ID_PROPERTIES
+    END
+END
+
+IDR_HELP_MENU MENU
+BEGIN
+    MENUITEM "&О проекте VisGUI...",        ID_APP_ABOUT
+END
+
+IDR_THEME_MENU MENU
+BEGIN
+    MENUITEM "Office 2007 (&голубой стиль)", ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (ч&ерный стиль)", ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (&серебристый стиль)", ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (&зеленовато-голубой стиль)", ID_VIEW_APPLOOK_OFF_2007_AQUA
+    MENUITEM "Win&dows 7",                  ID_VIEW_APPLOOK_WINDOWS_7
+END
+
+IDR_TEST_TMPL MENU
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        MENUITEM "&Создать\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "&Открыть...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "&Сохранить\tCtrl+S",          ID_FILE_SAVE
+        MENUITEM "Сохранить &как...",           ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Печать...\tCtrl+P",          ID_FILE_PRINT
+        MENUITEM "Предварительный прос&мотр",   ID_FILE_PRINT_PREVIEW
+        MENUITEM "&Настройка печати...",        ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Последний файл",              ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "В&ыход",                      ID_APP_EXIT
+    END
+    POPUP "&Правка"
+    BEGIN
+        MENUITEM "&Отменить\tCtrl+Z",           ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "&Вырезать\tCtrl+X",           ID_EDIT_CUT
+        MENUITEM "&Копировать\tCtrl+C",         ID_EDIT_COPY
+        MENUITEM "&Вставить\tCtrl+V",           ID_EDIT_PASTE
+    END
+    POPUP "&Вид"
+    BEGIN
+        MENUITEM "&Панель инструментов",        ID_VIEW_TOOLBAR
+        MENUITEM "&Строка состояния",           ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Справка"
+    BEGIN
+        MENUITEM "&О программе...",             ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_LOAD_COMPONENT,      VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_DELETE,      ID_EDIT_CLEAR,          VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "О проекте VisGUI"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,13,6,21,20
+    LTEXT           "VisGUI, версия 2.0",IDC_STATIC,55,14,65,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) Vadim Zagruny  2017",IDC_STATIC,30,30,114,8
+    DEFPUSHBUTTON   "ОК",IDOK,61,43,50,14,WS_GROUP
+END
+
+IDD_PARTICLE_EDITOR_DIALOG DIALOGEX 0, 0, 157, 411
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Particle Editor"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,21,381,50,14
+    PUSHBUTTON      "Отмена",ID_PARTICLE_DLG_CANCEL,83,381,50,14
+    GROUPBOX        "Position",IDC_POSITION_STATIC,17,239,60,71
+    LTEXT           "ExpKoefVelAtten",IDC_STATIC,19,87,55,8
+    LTEXT           "TimeEvalExpKoef",IDC_STATIC,19,106,56,8
+    LTEXT           "TimeLife",IDC_STATIC,19,127,27,8
+    LTEXT           "StartSize",IDC_STATIC,19,146,30,8
+    LTEXT           "EndSize",IDC_STATIC,19,165,26,8
+    LTEXT           "StartTransparency",IDC_STATIC,19,183,61,8
+    LTEXT           "EndTransparency",IDC_STATIC,19,201,57,8
+    LTEXT           "AngularVelocity",IDC_STATIC,19,220,50,8
+    EDITTEXT        IDC_PARTICLE_EXP_KOEF_VEL_ATTEN_EDIT,84,85,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PARTICLE_TIME_EVAL_EXP_KOEF_EDIT,84,105,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PARTICLE_START_SIZE_EDIT,84,144,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PARTICLE_TIME_LIFE_EDIT,84,124,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PARTICLE_END_SIZE_EDIT,84,163,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PARTICLE_START_TRANSP_EDIT,84,181,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PARTICLE_END_TRANSP_EDIT,84,200,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PARTICLE_ANGULAR_VELOSITY_EDIT,84,218,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_PARTICLE_EXP_KOEF_VEL_ATTEN_SPIN,"msctls_updown32",UDS_ARROWKEYS,129,85,10,14
+    CONTROL         "",IDC_PARTICLE_TIME_EVAL_EXP_KOEF_SPIN,"msctls_updown32",UDS_ARROWKEYS,129,105,11,14
+    CONTROL         "",IDC_PARTICLE_TIME_LIFE_SPIN,"msctls_updown32",UDS_ARROWKEYS,129,125,11,14
+    CONTROL         "",IDC_PARTICLE_START_SIZE_SPIN,"msctls_updown32",UDS_ARROWKEYS,129,143,11,14
+    CONTROL         "",IDC_PARTICLE_END_SIZE_SPIN,"msctls_updown32",UDS_ARROWKEYS,129,162,11,14
+    CONTROL         "",IDC_PARTICLE_START_TRANSP_SPIN,"msctls_updown32",UDS_ARROWKEYS,129,181,11,14
+    CONTROL         "",IDC_PARTICLE_END_TRANSP_SPIN,"msctls_updown32",UDS_ARROWKEYS,129,200,11,14
+    CONTROL         "",IDC_PARTICLE_ANGULAR_VELOSITY_SPIN,"msctls_updown32",UDS_ARROWKEYS,129,218,11,14
+    LTEXT           "X",IDC_STATIC,23,253,8,8
+    LTEXT           "Y",IDC_STATIC,23,273,8,8
+    LTEXT           "Z",IDC_STATIC,23,295,8,8
+    EDITTEXT        IDC_PARTICLE_POSITION_X_EDIT,29,251,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PARTICLE_POSITION_Y_EDIT,29,271,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PARTICLE_POSITION_Z_EDIT,30,291,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Velocity",IDC_PARTICLE_VELOCITY_STATIC,83,239,59,71
+    LTEXT           "X",IDC_STATIC,88,253,8,8
+    LTEXT           "Y",IDC_STATIC,88,273,8,8
+    LTEXT           "Z",IDC_STATIC,88,295,8,8
+    EDITTEXT        IDC_PARTICLE_VELOCITY_X_EDIT,95,250,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PARTICLE_VELOCITY_Y_EDIT,95,271,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PARTICLE_VELOCITY_Z_EDIT,95,290,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_PARTICLE_POSITION_X_SPIN,"msctls_updown32",UDS_ARROWKEYS,63,250,11,14
+    CONTROL         "",IDC_PARTICLE_POSITION_Y_SPIN,"msctls_updown32",UDS_ARROWKEYS,63,271,11,14
+    CONTROL         "",IDC_PARTICLE_POSITION_Z_SPIN,"msctls_updown32",UDS_ARROWKEYS,63,290,11,14
+    CONTROL         "",IDC_PARTICLE_VELOCITY_X_SPIN,"msctls_updown32",UDS_ARROWKEYS,129,250,11,14
+    CONTROL         "",IDC_PARTICLE_VELOCITY_Y_SPIN,"msctls_updown32",UDS_ARROWKEYS,129,271,11,14
+    CONTROL         "",IDC_PARTICLE_VELOCITY_Z_SPIN,"msctls_updown32",UDS_ARROWKEYS,129,290,11,14
+    LTEXT           "Gravity",IDC_STATIC,19,68,24,8
+    EDITTEXT        IDC_PARTICLE_GRAVITY_EDIT,83,65,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_PARTICLE_GRAVITY_SPIN,"msctls_updown32",UDS_ARROWKEYS,129,65,10,14
+    GROUPBOX        "Material File",IDC_STATIC,7,13,141,36
+    CONTROL         "",IDC_PARTICLE_MAT_BROWSE,"MfcEditBrowse",WS_BORDER | WS_TABSTOP | 0x800,15,27,125,14
+    CONTROL         "",IDC_PARTICLE_COLOR_LERP_START,"MfcColorButton",WS_TABSTOP | 0x1,29,328,103,14
+    GROUPBOX        "Color Lerp",IDC_STATIC,17,316,126,53
+    CONTROL         "",IDC_PARTICLE_COLOR_LERP_END,"MfcColorButton",WS_TABSTOP | 0x1,29,347,103,14
+END
+
+IDD_WEATHER_EDIT_DIALOG DIALOGEX 0, 0, 151, 157
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Weather Editor"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,24,127,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,76,127,50,14
+    CONTROL         "",IDC_WEATHER_FOG_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,82,67,62,15
+    CONTROL         "",IDC_WEATHER_WIND_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,82,94,62,15
+    EDITTEXT        IDC_WEATHER_HOUR_EDIT,48,14,19,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_WEATHER_MINUTE_EDIT,48,41,19,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_WEATHER__FOG_EDIT,48,68,19,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_WEATHER__WIND_EDIT,48,94,19,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    CONTROL         "",IDC_WEATHER__HOUR_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,82,14,62,15
+    CONTROL         "",IDC_WEATHER_MINUTE_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,82,41,62,15
+    GROUPBOX        "Minutes",IDC_STATIC,7,33,137,26
+    GROUPBOX        "Hours",IDC_STATIC,7,7,137,26
+    GROUPBOX        "Fog,%",IDC_STATIC,7,60,137,26
+    GROUPBOX        "Wind,m/s",IDC_STATIC,7,87,137,26
+END
+
+IDD_MATERIAL_EDIT_DIALOG DIALOGEX 0, 0, 129, 274
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Material Editor"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,7,253,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,70,253,50,14
+    CONTROL         "",IDC_MATEDIT_PICTURE_CONTROL,"Static",SS_OWNERDRAW | SS_CENTERIMAGE,7,20,116,67
+    LTEXT           "Texture Image",IDC_STATIC,7,7,48,8
+    GROUPBOX        "Propertys",IDC_STATIC,4,89,120,156
+    CONTROL         "",IDC_MAT_EDIT_MAT_FILEBROWSE,"MfcEditBrowse",WS_BORDER | WS_TABSTOP | 0x880,16,147,98,14
+    CONTROL         "",IDC_MAT_EDIT_MFCCOLORBUTTON,"MfcColorButton",WS_TABSTOP,17,113,95,14
+    GROUPBOX        "Color",IDC_STATIC,12,103,105,30
+    GROUPBOX        "Material File ",IDC_STATIC,12,136,105,32
+    GROUPBOX        "Texture File",IDC_STATIC,12,169,105,32
+    GROUPBOX        "Shader File",IDC_STATIC,12,202,105,32
+    CONTROL         "",IDC_MAT_EDIT_TEX_FILEBROWSE,"MfcEditBrowse",WS_BORDER | WS_TABSTOP | 0x880,16,180,97,14
+    CONTROL         "",IDC_MAT_EDIT_SHD_FILEBROWSE,"MfcEditBrowse",WS_BORDER | WS_TABSTOP | 0x880,16,212,97,14
+END
+
+IDD_PARTICLE_SYS_NAME_DIALOG DIALOGEX 0, 0, 161, 59
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ParticleSystem Create Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,18,42,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,94,42,50,14
+    EDITTEXT        IDC_PARTICLE_SYS_NAME_EDIT,10,17,139,14,ES_AUTOHSCROLL | ES_WANTRETURN
+    GROUPBOX        "Тут надо писать имя системы частиц !)",IDC_STATIC,5,5,150,34
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904b0"
+        BEGIN
+            VALUE "CompanyName", "KhMBDB"
+            VALUE "FileDescription", "VisGUI"
+            VALUE "FileVersion", "2.0.0.1"
+            VALUE "InternalName", "VisGUI.exe"
+            VALUE "LegalCopyright", "Vadim Zagruny (c) <KhMBDB>. Все права защищены."
+            VALUE "OriginalFilename", "VisGUI.exe"
+            VALUE "ProductName", "Visualization Resource Editor"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_PARTICLE_EDITOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 150
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 404
+    END
+
+    IDD_WEATHER_EDIT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_MATERIAL_EDIT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 268
+    END
+
+    IDD_PARTICLE_SYS_NAME_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 154
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MATERIAL_EDIT_DIALOG DLGINIT
+BEGIN
+    IDC_MAT_EDIT_MAT_FILEBROWSE, 0x37c, 42, 0
+0x4d3c, 0x4346, 0x6445, 0x7469, 0x7242, 0x776f, 0x6573, 0x4d5f, 0x646f, 
+0x3e65, 0x3c31, 0x4d2f, 0x4346, 0x6445, 0x7469, 0x7242, 0x776f, 0x6573, 
+0x4d5f, 0x646f, 0x3e65, 
+    IDC_MAT_EDIT_MFCCOLORBUTTON, 0x37c, 215, 0
+0x4d3c, 0x4346, 0x6f43, 0x6f6c, 0x4272, 0x7475, 0x6f74, 0x5f6e, 0x6e45, 
+0x6261, 0x656c, 0x744f, 0x6568, 0x4272, 0x7475, 0x6f74, 0x3e6e, 0x5254, 
+0x4555, 0x2f3c, 0x464d, 0x4343, 0x6c6f, 0x726f, 0x7542, 0x7474, 0x6e6f, 
+0x455f, 0x616e, 0x6c62, 0x4f65, 0x6874, 0x7265, 0x7542, 0x7474, 0x6e6f, 
+0x3c3e, 0x464d, 0x4343, 0x6c6f, 0x726f, 0x7542, 0x7474, 0x6e6f, 0x455f, 
+0x616e, 0x6c62, 0x4165, 0x7475, 0x6d6f, 0x7461, 0x6369, 0x7542, 0x7474, 
+0x6e6f, 0x463e, 0x4c41, 0x4553, 0x2f3c, 0x464d, 0x4343, 0x6c6f, 0x726f, 
+0x7542, 0x7474, 0x6e6f, 0x455f, 0x616e, 0x6c62, 0x4165, 0x7475, 0x6d6f, 
+0x7461, 0x6369, 0x7542, 0x7474, 0x6e6f, 0x3c3e, 0x464d, 0x4343, 0x6c6f, 
+0x726f, 0x7542, 0x7474, 0x6e6f, 0x435f, 0x6c6f, 0x6d75, 0x736e, 0x6f43, 
+0x6e75, 0x3e74, 0x3c35, 0x4d2f, 0x4346, 0x6f43, 0x6f6c, 0x4272, 0x7475, 
+0x6f74, 0x5f6e, 0x6f43, 0x756c, 0x6e6d, 0x4373, 0x756f, 0x746e, "\076" 
+    IDC_MAT_EDIT_TEX_FILEBROWSE, 0x37c, 42, 0
+0x4d3c, 0x4346, 0x6445, 0x7469, 0x7242, 0x776f, 0x6573, 0x4d5f, 0x646f, 
+0x3e65, 0x3c33, 0x4d2f, 0x4346, 0x6445, 0x7469, 0x7242, 0x776f, 0x6573, 
+0x4d5f, 0x646f, 0x3e65, 
+    IDC_MAT_EDIT_SHD_FILEBROWSE, 0x37c, 42, 0
+0x4d3c, 0x4346, 0x6445, 0x7469, 0x7242, 0x776f, 0x6573, 0x4d5f, 0x646f, 
+0x3e65, 0x3c31, 0x4d2f, 0x4346, 0x6445, 0x7469, 0x7242, 0x776f, 0x6573, 
+0x4d5f, 0x646f, 0x3e65, 
+    0
+END
+
+IDD_PARTICLE_EDITOR_DIALOG DLGINIT
+BEGIN
+    IDC_PARTICLE_MAT_BROWSE, 0x37c, 42, 0
+0x4d3c, 0x4346, 0x6445, 0x7469, 0x7242, 0x776f, 0x6573, 0x4d5f, 0x646f, 
+0x3e65, 0x3c31, 0x4d2f, 0x4346, 0x6445, 0x7469, 0x7242, 0x776f, 0x6573, 
+0x4d5f, 0x646f, 0x3e65, 
+    IDC_PARTICLE_COLOR_LERP_START, 0x37c, 214, 0
+0x4d3c, 0x4346, 0x6f43, 0x6f6c, 0x4272, 0x7475, 0x6f74, 0x5f6e, 0x6e45, 
+0x6261, 0x656c, 0x744f, 0x6568, 0x4272, 0x7475, 0x6f74, 0x3e6e, 0x5254, 
+0x4555, 0x2f3c, 0x464d, 0x4343, 0x6c6f, 0x726f, 0x7542, 0x7474, 0x6e6f, 
+0x455f, 0x616e, 0x6c62, 0x4f65, 0x6874, 0x7265, 0x7542, 0x7474, 0x6e6f, 
+0x3c3e, 0x464d, 0x4343, 0x6c6f, 0x726f, 0x7542, 0x7474, 0x6e6f, 0x455f, 
+0x616e, 0x6c62, 0x4165, 0x7475, 0x6d6f, 0x7461, 0x6369, 0x7542, 0x7474, 
+0x6e6f, 0x543e, 0x5552, 0x3c45, 0x4d2f, 0x4346, 0x6f43, 0x6f6c, 0x4272, 
+0x7475, 0x6f74, 0x5f6e, 0x6e45, 0x6261, 0x656c, 0x7541, 0x6f74, 0x616d, 
+0x6974, 0x4263, 0x7475, 0x6f74, 0x3e6e, 0x4d3c, 0x4346, 0x6f43, 0x6f6c, 
+0x4272, 0x7475, 0x6f74, 0x5f6e, 0x6f43, 0x756c, 0x6e6d, 0x4373, 0x756f, 
+0x746e, 0x353e, 0x2f3c, 0x464d, 0x4343, 0x6c6f, 0x726f, 0x7542, 0x7474, 
+0x6e6f, 0x435f, 0x6c6f, 0x6d75, 0x736e, 0x6f43, 0x6e75, 0x3e74, 
+    IDC_PARTICLE_COLOR_LERP_END, 0x37c, 214, 0
+0x4d3c, 0x4346, 0x6f43, 0x6f6c, 0x4272, 0x7475, 0x6f74, 0x5f6e, 0x6e45, 
+0x6261, 0x656c, 0x744f, 0x6568, 0x4272, 0x7475, 0x6f74, 0x3e6e, 0x5254, 
+0x4555, 0x2f3c, 0x464d, 0x4343, 0x6c6f, 0x726f, 0x7542, 0x7474, 0x6e6f, 
+0x455f, 0x616e, 0x6c62, 0x4f65, 0x6874, 0x7265, 0x7542, 0x7474, 0x6e6f, 
+0x3c3e, 0x464d, 0x4343, 0x6c6f, 0x726f, 0x7542, 0x7474, 0x6e6f, 0x455f, 
+0x616e, 0x6c62, 0x4165, 0x7475, 0x6d6f, 0x7461, 0x6369, 0x7542, 0x7474, 
+0x6e6f, 0x543e, 0x5552, 0x3c45, 0x4d2f, 0x4346, 0x6f43, 0x6f6c, 0x4272, 
+0x7475, 0x6f74, 0x5f6e, 0x6e45, 0x6261, 0x656c, 0x7541, 0x6f74, 0x616d, 
+0x6974, 0x4263, 0x7475, 0x6f74, 0x3e6e, 0x4d3c, 0x4346, 0x6f43, 0x6f6c, 
+0x4272, 0x7475, 0x6f74, 0x5f6e, 0x6f43, 0x756c, 0x6e6d, 0x4373, 0x756f, 
+0x746e, 0x353e, 0x2f3c, 0x464d, 0x4343, 0x6c6f, 0x726f, 0x7542, 0x7474, 
+0x6e6f, 0x435f, 0x6c6f, 0x6d75, 0x736e, 0x6f43, 0x6e75, 0x3e74, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "VisGUI\n\nVisGUI\n\n\nVisGUI.Document\nVisGUI.Document"
+    IDS_PROP_POS_Y          "Position on Y axis"
+    IDS_PROP_POS_Z          "Position on Z axis"
+    IDS_PROP_ROT_X          "Поворот по оси X"
+    IDS_PROP_ROT_Y          "Поворот по оси Y"
+    IDS_PROP_ROT_Z          "Поворот по оси Z"
+    ID_SAVE_TARGETDATA_FILE "Сохранить конфикурацию типа модели"
+    IDS_PARTICLE_SYS_POS    "Позиция системы частиц"
+    ID_OPEN                 "Открыть файл"
+    IDS_PARTICLE_SYS_VEL    "Скорость системы частиц"
+    IDS_PARTICLE_SYS_START_SIZE "Начальный размер частиц"
+    IDS_PARTICLE_SYS_END_SIZE "Конечный размер частиц"
+    IDS_PARTICLE_SYS_EXP_VEL_ATTEN 
+                            "Коэффициент затухания скорости частиц fExpKoefVelAtten"
+    IDS_PARTICLE_SYS_TIME_EVAL_KOEF "fTimeEvalExpKoef"
+    IDS_PARTICLE_SYS_TIME_LIFE "Время жизни частицы"
+    IDS_PARTICLE_SYS_START_TRANSP "Стартовая прозрачность частиц"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "VisGUI"
+    AFX_IDS_IDLEMESSAGE     "Готово"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Создание нового документа\nСоздать"
+    ID_FILE_OPEN            "Открытие существующего документа\nОткрыть"
+    ID_FILE_CLOSE           "Закрытие активного документа\nЗакрыть"
+    ID_FILE_SAVE            "Сохранение активного документа\nСохранить"
+    ID_FILE_SAVE_AS         "Сохранение активного документа под новым именем\nСохранить как"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Вывод сведений о программе, ее версии и авторских правах\nО программе"
+    ID_APP_EXIT             "Завершение работы приложения с запросом на сохранение документов\nВыход"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Открытие данного документа"
+    ID_FILE_MRU_FILE2       "Открытие данного документа"
+    ID_FILE_MRU_FILE3       "Открытие данного документа"
+    ID_FILE_MRU_FILE4       "Открытие данного документа"
+    ID_FILE_MRU_FILE5       "Открытие данного документа"
+    ID_FILE_MRU_FILE6       "Открытие данного документа"
+    ID_FILE_MRU_FILE7       "Открытие данного документа"
+    ID_FILE_MRU_FILE8       "Открытие данного документа"
+    ID_FILE_MRU_FILE9       "Открытие данного документа"
+    ID_FILE_MRU_FILE10      "Открытие данного документа"
+    ID_FILE_MRU_FILE11      "Открытие данного документа"
+    ID_FILE_MRU_FILE12      "Открытие данного документа"
+    ID_FILE_MRU_FILE13      "Открытие данного документа"
+    ID_FILE_MRU_FILE14      "Открытие данного документа"
+    ID_FILE_MRU_FILE15      "Открытие данного документа"
+    ID_FILE_MRU_FILE16      "Открытие данного документа"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Переход к следующей области окна\nСледующая область"
+    ID_PREV_PANE            "Возврат к предыдущей области окна\nПредыдущая область"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Разделение активного окна на области\nРазделить"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Удаление выделенного фрагмента\nУдалить"
+    ID_EDIT_CLEAR_ALL       "Полное удаление содержимого документа\nУдалить все"
+    ID_EDIT_COPY            "Копирование выделенного фрагмента в буфер обмена\nКопировать"
+    ID_EDIT_CUT             "Удаление выделенного фрагмента в буфер обмена\nВырезать"
+    ID_EDIT_FIND            "Поиск указанного текста\nНайти"
+    ID_EDIT_PASTE           "Вставка содержимого буфера обмена\nВставить"
+    ID_EDIT_REPEAT          "Повторение последнего действия\nПовторить"
+    ID_EDIT_REPLACE         "Замена заданного текста другим текстом\nЗаменить"
+    ID_EDIT_SELECT_ALL      "Выделение всего документа\nВыделить все"
+    ID_EDIT_UNDO            "Отмена последнего действия\nОтменить"
+    ID_EDIT_REDO            "Повторное выполнение последнего отмененного действия\nВернуть"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_STATUS_BAR      "Показать или скрыть строку состояния\n Переключение строки состояния"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Изменение размера окна"
+    AFX_IDS_SCMOVE          "Изменение положения окна"
+    AFX_IDS_SCMINIMIZE      "Свертывание окна в значок"
+    AFX_IDS_SCMAXIMIZE      "Развертывание окна до полного размера"
+    AFX_IDS_SCNEXTWINDOW    "Переход к следующему окну документа"
+    AFX_IDS_SCPREVWINDOW    "Переход к предыдущему окну документа"
+    AFX_IDS_SCCLOSE         "Закрытие активного окна с запросом на сохранение документов"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Восстановление исходных размеров окна"
+    AFX_IDS_SCTASKLIST      "Вызов окна редактора системы частиц"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STATUS_PANE1        "Панель 1"
+    IDS_STATUS_PANE2        "Панель 2"
+    IDS_TOOLBAR_STANDARD    "Стандартный"
+    IDS_TOOLBAR_CUSTOMIZE   "Настройка..."
+    IDS_PROP_TEST           "dswe"
+    IDS_PROP_POS_X          "Position on X axis"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_PARTICLE_SYS_END_TRANSP "Конечная прозрачность частиц"
+    IDS_PARTICLE_SYS_ANGULAR_VEL "Угловая скорость частиц"
+    IDS_PARTICLE_SYS_GRAVITY "Сила гравитации воздействующая на частицу"
+    IDS_TREE_VIEW_COMPONENT_TYPE 
+                            "Тип файла ""компонент"" в TreeView контроллере "
+    IDS_TREE_VIEW_PARTICLE_SYS_TYPE 
+                            "Тип файла ""система частиц"" в TreeView контроллере"
+    IDS_PARTICLE_SYS_POS_X  "Позиция системы частиц по оси X"
+    IDS_PARTICLE_SYS_POS_Y  "Позиция системы частиц по оси Y"
+    IDS_PARTICLE_SYS_POS_Z  "Позиция системы частиц по оси Z"
+    IDS_PARTICLE_SYS_VEL_X  "Скорость системы частиц по оси X"
+    IDS_PARTICLE_SYS_VEL_Y  "Скорость системы частиц по оси Y"
+    IDS_PARTICLE_SYS_VEL_Z  "Скорость системы частиц по оси Z"
+    IDS_FILE_VIEW           "Представление файлов"
+    IDS_CLASS_VIEW          "Представление классов"
+    IDS_PARTICLE_SYS_MATERIAL "Материал системы частиц"
+    IDS_PROPERTIES_WND      "Свойства"
+    IDS_PARTICLE_SYS_START_COLOR "Начальный цвет частиц"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EXPLORER            "Проводник"
+    IDS_EDIT_MENU           "Редактировать"
+    IDR_TEST_TMPL           "Test\nTest\nTest\nTest Files (*.tes)\n.tes\nTest.Document\nTest Document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_PARTICLES       "dsd"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_PARTICLE_SYS_END_COLOR "Конечный цвет частиц"
+END
+
+#endif    // Русский (Россия) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE 25, 1
+#include "res\VisGUI.rc2"  // ресурсы, не редактируемые в Microsoft Visual C++
+#include "l.RUS\afxres.rc"      // Стандартные компоненты
+#if !defined(_AFXDLL)
+#include "l.RUS\afxprint.rc"        // ресурсы для печати/предварительного просмотра
+#include "l.RUS\afxribbon.rc"        // Лента MFC и ресурсы панели управления
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Файлы исходного кода">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Заголовочные файлы">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Заголовочные файлы\VisDocs">
+      <UniqueIdentifier>{b9c5f454-3d92-46d6-a000-5ea3074644d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\VisDocs">
+      <UniqueIdentifier>{baed8d9b-ca04-4b57-acf8-e75253da0320}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\XML">
+      <UniqueIdentifier>{d13eadec-b760-423d-b60b-0d3633a680f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\XML">
+      <UniqueIdentifier>{d7303643-beac-490a-a4b6-d5937d103351}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VisGUI.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="VisGUIDoc.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="VisGUIView.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="FileView.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassView.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewTree.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertiesWnd.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseResource.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="ComplexSound.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="GMaterialParser.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicPort.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphUtil.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="GrPortTypes.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="InputPort.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshSource.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleSystem.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedResource.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedShaderResource.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="SpectatorCamera.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteContainer.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteContainerXYZRHW.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="Weather.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="NetObject.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMan.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="RTClass.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="client.h">
+      <Filter>Заголовочные файлы\VisDocs</Filter>
+    </ClInclude>
+    <ClInclude Include="EditParticles.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="WeatherEditor.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Presenter.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialEditor.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="StrategyParticleSystem.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleEmmiter.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="XML\tinyxml.h">
+      <Filter>Заголовочные файлы\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManager.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="TargetDataParser.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="LoggerImpl.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleSysPropertiesGrid.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="CompPropertiesGrid.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleSysNameDlg.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VisGUI.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="VisGUIDoc.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="VisGUIView.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="FileView.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassView.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewTree.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertiesWnd.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="GMaterialParser.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicPort.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphUtil.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="InputPort.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshSource.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleSystem.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="SharedResource.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="SharedShaderResourse.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteContainer.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteContainerXYZRHW.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="Synchronizer.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="Weather.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="NetObject.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMan.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="timer.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="RTClass.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="Land_vis.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="Landmark.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="LandScape.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="Filter.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="client.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="Decoration.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="frametimer.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="Moon.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="Rain.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="RainDrop.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="RainStreak.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="Screen.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="Slave.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="Splash.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="targetnew.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="VisSlave.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseResource.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Файлы исходного кода\VisDocs</Filter>
+    </ClCompile>
+    <ClCompile Include="EditParticles.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="WeatherEditor.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Presenter.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialEditor.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="StrategyParticleSystem.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleEmmiter.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="XML\tinyxml.cpp">
+      <Filter>Файлы исходного кода\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="XML\tinyxmlerror.cpp">
+      <Filter>Файлы исходного кода\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="XML\tinyxmlparser.cpp">
+      <Filter>Файлы исходного кода\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="FileManager.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="TargetDataParser.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="LoggerImpl.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleSysPropertiesGrid.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="CompPropertiesGrid.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleSysNameDlg.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisGUI.rc">
+      <Filter>Файлы ресурсов</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\file_view.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\file_view_hc.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\class_view.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\class_view_hc.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\fileview.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\fileview_hc.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\classview.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\classview_hc.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\explorer.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\explorer_hc.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\sort.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\sort_hc.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\menuimages.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\menuimages_hc.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\properties_wnd.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\properties_wnd_hc.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\properties.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\properties_hc.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="UserImages.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\VisGUIDoc.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\VisGUI.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\Toolbar256.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\Test.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\VisGUI.rc2">
+      <Filter>Файлы ресурсов</Filter>
+    </None>
+    <None Include="newClassDiagram.cd" />
+  </ItemGroup>
+</Project>
